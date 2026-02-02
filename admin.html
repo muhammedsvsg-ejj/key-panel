@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>🔐 Admin Panel</h2>
+
+  <!-- KEY EKLE -->
+  <div>
+    <h3>Key Ekle</h3>
+    <input id="newKey" placeholder="Key (boşsa random)">
+    <input id="days" type="number" placeholder="Gün (örn: 30)">
+    <button onclick="addKey()">Key Ekle</button>
+  </div>
+
+  <hr>
+
+  <!-- KEY SİL -->
+  <div>
+    <h3>Key Sil</h3>
+    <input id="delKey" placeholder="Silinecek key">
+    <button onclick="deleteKey()">Key Sil</button>
+  </div>
+
+  <p id="adminResult"></p>
+
+  <script src="panel.js"></script>
+</body>
+</html>
